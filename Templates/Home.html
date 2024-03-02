@@ -15,7 +15,9 @@
 </section>
 
 <footer>
-    <p>Footer information</p>
+    {% for room in rooms%}
+    <p>{{ room.name }}</p>
+    {% endfor %}
 </footer>
 
 {% endblock content %}

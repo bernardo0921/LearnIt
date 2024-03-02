@@ -8,7 +8,7 @@ rooms = [
 # Create your views here.
 def Home(request):
     contents = {"rooms": rooms}
-    return render(request, "Home.html")
+    return render(request, "Home.html", contents)
 
 def Students(request):
     return render(request, "Student.html")
