@@ -1,16 +1,6 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Title of the document</title>
-</head>
-<body>
+{% extends 'main.html'%}
 
-<header>
-    <h1>Header</h1>
-</header>
-
+{% block content %}
 <nav>
     <ul>
         <li><a href="#">Home</a></li>
@@ -28,5 +18,4 @@
     <p>Footer information</p>
 </footer>
 
-</body>
-</html>
+{% endblock content %}
