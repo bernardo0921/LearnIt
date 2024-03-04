@@ -3,7 +3,7 @@
 {% block content %}
 <nav>
     <ul>
-        <li><a href="#">Home</a></li>
+       
         <li><a href="#">About</a></li>
         <li><a href="#">Contact</a></li>
     </ul>
@@ -16,7 +16,7 @@
 
 <footer>
     {% for room in rooms%}
-    <p>{{ room.name }}</p>
+    <li><a href="student/{{room.id}}">Home</a></li>
     {% endfor %}
 </footer>
 
