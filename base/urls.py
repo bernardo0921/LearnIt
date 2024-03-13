@@ -5,5 +5,6 @@ from .views import Home, Students, indexes
 urlpatterns = [
     path('', Home, name = 'home'),
     path('student/<str:pk>', Students, name = "student"),
-    path('indexes/', indexes, name = "indexes")
+    path('indexes/', indexes, name = "indexes"),
+    # what is mutex
 ]

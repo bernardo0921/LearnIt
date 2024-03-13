@@ -15,9 +15,11 @@
 </section>
 
 <footer>
+    {% comment %} {{rooms}} {% endcomment %}
     {% for room in rooms%}
-    <li><a href="student/{{room.id}}">Home</a></li>
+        {{room}}<br>
     {% endfor %}
+    {% comment %} {{roomss}} {% endcomment %}
 </footer>
 
 {% endblock content %}
