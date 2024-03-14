@@ -1,6 +1,8 @@
 {% extends 'main.html'%}
 
 {% block content %}
+
+
 <nav>
     <ul>
        
@@ -16,9 +18,19 @@
 
 <footer>
     {% comment %} {{rooms}} {% endcomment %}
-    {% for room in rooms%}
-        {{room}}<br>
-    {% endfor %}
+    <div>
+
+        {% for room in rooms%}
+        {% comment %} {%if room.host.username == "righteous"%} {% endcomment %}
+        <span>@{{room.host.username}}</span> <br>
+        
+        <span>@{{room.host.username}}</span> <br>
+        
+        {% comment %} {% endif %} {% endcomment %}
+        {% endfor %}
+        
+    </div>
+    
     {% comment %} {{roomss}} {% endcomment %}
 </footer>
 

@@ -7,10 +7,6 @@ rooms = [
     {'id': 3, 'name': 'I am in Ghana'},
 ]
 # Create your views here.
-# def Home(request):
-#     rooms = Room.objects.all()
-#     contents = {"rooms": rooms}
-#     return render(request, "./base/Home.html", contents)
 def Students(request, pk):
     # roooms = Room.objects.get(id = pk)
     contents = {"rooms": rooms}
@@ -20,7 +16,7 @@ def indexes(request):
     return render(request, "./base/indexes.html")
 
 # creating a view to work with the database
-def Home(rewuest):
+def Home(request):
     rooms = Room.objects.all()
     contenents = {"rooms": rooms}
     return render(request, "./base/Home.html", contenents)

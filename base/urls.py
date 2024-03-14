@@ -3,7 +3,8 @@ from .views import Home, Students, indexes
 
 # create url patterns for the base app
 urlpatterns = [
-    path('', indexes, name = "indexes"),
+    path('', Home, name = "home"),
+    path('ss', indexes, name = "indexes"),
     path('student/<str:pk>', Students, name = "student"),
     
 ]
