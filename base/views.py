@@ -19,3 +19,6 @@ def Home(request):
     rooms = Room.objects.all()
     contenents = {"rooms": rooms}
     return render(request, "./base/Home.html", contenents)
+def createRoom(request):
+    contents = {}
+    return render(request, "./base/room_form.html, contents")
