@@ -19,7 +19,7 @@
 <footer>
     {% comment %} {{rooms}} {% endcomment %}
     <div>
-        <a href = "{url 'createroom'}"></a>
+        <a href = "{% url 'roomform'%}">create room</a>
 
         {% for room in rooms%}
         {% comment %} {%if room.host.username == "righteous"%} {% endcomment %}

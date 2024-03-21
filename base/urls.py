@@ -6,5 +6,5 @@ urlpatterns = [
     path('', Home, name = "home"),
     path('ss/', indexes, name = "indexes"),
     path('student/<str:pk>', Students, name = "student"),
-    path('roomform/', createRoom, name = "createroom"),
+    path('roomform/', createRoom, name = "roomform"),
 ]

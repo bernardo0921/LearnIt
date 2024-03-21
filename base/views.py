@@ -1,5 +1,6 @@
 from django.shortcuts import render
 from .models import Room
+from .forms import RoomForm
 rooms = [
     {'id': 1, 'name': 'what is matter in the real world'},
     {'id': 2, 'name': 'Who is Jesus'},
@@ -8,7 +9,7 @@ rooms = [
 # Create your views here.
 def Students(request, pk):
     # roooms = Room.objects.get(id = pk)
-    contents = {"rooms": rooms}
+    contents = {"rooms": Room}
     return render(request, "./base/room.html", contents)
 
 def indexes(request):
@@ -20,5 +21,6 @@ def Home(request):
     contenents = {"rooms": rooms}
     return render(request, "./base/Home.html", contenents)
 def createRoom(request):
-    contents = {}
-    return render(request, "./base/room_form.html, contents")
+    form = RoomForm
+    contents = {"form": form}
+    return render(request, "./base/room_form.html", contents)
